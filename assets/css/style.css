@@ -672,7 +672,7 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 20px 30px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -700,6 +700,10 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+}
+
+.services .icon-box img {
+  width: 80%;
 }
 
 .services .icon-box h4 a {
