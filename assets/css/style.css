@@ -79,7 +79,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgba(15, 33, 71, );
+  background: rgba(15, 33, 71);
 }
 
 #preloader:before {
@@ -185,8 +185,8 @@ h6 {
 
 @media (max-width: 992px) {
   .get-started-btn {
-    padding: 7px 15px 8px 15px;
-    margin-right: 15px;
+    padding: 7px 8px 8px 8px;
+    margin-right: 10px;
   }
 }
 
