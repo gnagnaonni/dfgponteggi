@@ -79,7 +79,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #151515;
+  background: rgba(15, 33, 71, );
 }
 
 #preloader:before {
@@ -781,21 +781,22 @@ section {
 }
 
 
+
 /*--------------------------------------------------------------
 # casi studio
 --------------------------------------------------------------*/
 .profili .icon-box {
-  text-align: center;
+  text-align: left;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 60px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
 
 .profili .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   background: #ffc451;
   border-radius: 4px;
   display: flex;
@@ -815,6 +816,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+
 }
 
 .profili .icon-box h4 a {
@@ -833,10 +835,50 @@ section {
   text-align: left;
 }
 
+.profili .content ul {
+  font-size: 13.5px;
+  list-style: none;
+  padding: 0;
+  margin-top: 5%;
+}
+
+.profili .content ul li {
+  padding: 0 0 8px 20px;
+  position: relative;
+}
+
+.profili .content ul i {
+  position: absolute;
+  font-size: 13px;
+  left: 0;
+  color: #ffc451;
+}
+
 .profili .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
+}
+
+.profili .icon-box .bottone {
+  background: none;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  background: #ffc451;
+  color: #151515;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.profili .icon-box .bottone p {
+  background: none;
+  font-size: 10px;
+  font-weight: 400;
+  color: #444444;
+  text-align: center;
+
 }
 
 /*--------------------------------------------------------------
@@ -1662,6 +1704,12 @@ section {
 --------------------------------------------------------------*/
 @media (max-width: 992px) {
   #header h1.logo {
-    font-size: 20px
+    font-size: 15px
+  }
+}
+
+@media (max-width: 992px) {
+  #services .icon-box img.img-fluid {
+    max-width: 40%
   }
 }
