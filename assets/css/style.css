@@ -831,28 +831,10 @@ section {
 .profili .icon-box p {
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   text-align: left;
 }
 
-.profili .content ul {
-  font-size: 13.5px;
-  list-style: none;
-  padding: 0;
-  margin-top: 5%;
-}
-
-.profili .content ul li {
-  padding: 0 0 8px 20px;
-  position: relative;
-}
-
-.profili .content ul i {
-  position: absolute;
-  font-size: 13px;
-  left: 0;
-  color: #ffc451;
-}
 
 .profili .icon-box:hover {
   border-color: #fff;
@@ -860,26 +842,7 @@ section {
   transform: translateY(-10px);
 }
 
-.profili .icon-box .bottone {
-  background: none;
-  font-size: 25px;
-  font-weight: 600;
-  text-align: center;
-  padding: 10px;
-  background: #ffc451;
-  color: #151515;
-  transition: 0.3s;
-  border-radius: 4px;
-}
 
-.profili .icon-box .bottone p {
-  background: none;
-  font-size: 10px;
-  font-weight: 400;
-  color: #444444;
-  text-align: center;
-
-}
 
 /*--------------------------------------------------------------
 # Portfolio
