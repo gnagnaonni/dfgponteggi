@@ -479,6 +479,40 @@ h6 {
   color: #ffc451;
 }
 
+#hero .form-inline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#hero .form-inline .form-control {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#hero .form-inline .btn {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  margin-left: 1rem;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #ffc451;
+}
+
+#hero .form-inline .btn:hover {
+  border-color: #ffc451;
+  color: #ffffff;
+}
+
 #hero .icon-box h3 {
   font-weight: 700;
   margin: 10px 0 0 0;
@@ -572,6 +606,35 @@ h6 {
 #hero2 h2 span {
   color: #ffc451;
   font-weight: 700;
+}
+
+#hero2 .form-inline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#hero2 .form-inline .form-control {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#hero2 .form-inline .btn {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  margin-left: 1rem;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #ffc451;
 }
 
 #hero2 .icon-box {
