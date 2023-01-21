@@ -1603,7 +1603,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.btn-info {
   background: #ffc451;
   border: 0;
   padding: 10px 24px;
@@ -1612,8 +1612,21 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.btn-info:hover {
   background: #ffcd6b;
+}
+
+.btn-success {
+  background: #13b83c;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.btn-success:hover {
+  background: #13b83c;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1839,6 +1852,21 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #0f2147; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
