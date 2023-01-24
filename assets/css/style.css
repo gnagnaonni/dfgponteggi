@@ -479,6 +479,40 @@ h6 {
   color: #ffc451;
 }
 
+#hero .form-inline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#hero .form-inline .form-control {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#hero .form-inline .btn {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  margin-left: 1rem;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #ffc451;
+}
+
+#hero .form-inline .btn:hover {
+  border-color: #ffc451;
+  color: #ffffff;
+}
+
 #hero .icon-box h3 {
   font-weight: 700;
   margin: 10px 0 0 0;
@@ -572,6 +606,35 @@ h6 {
 #hero2 h2 span {
   color: #ffc451;
   font-weight: 700;
+}
+
+#hero2 .form-inline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#hero2 .form-inline .form-control {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#hero2 .form-inline .btn {
+  color: #151515;
+  border-radius: 4px;
+  padding: 8px 25px 9px 25px;
+  margin-left: 1rem;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #ffc451;
 }
 
 #hero2 .icon-box {
@@ -1540,7 +1603,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.btn-info {
   background: #ffc451;
   border: 0;
   padding: 10px 24px;
@@ -1549,8 +1612,21 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.btn-info:hover {
   background: #ffcd6b;
+}
+
+.btn-success {
+  background: #99c661;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.btn-success:hover {
+  background: #99c661;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1776,6 +1852,28 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3;
+  /* Light grey */
+  border-top: 5px solid #0f2147;
+  /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
