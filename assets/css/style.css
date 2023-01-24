@@ -1617,7 +1617,7 @@ section {
 }
 
 .btn-success {
-  background: #13b83c;
+  background: #99c661;
   border: 0;
   padding: 10px 24px;
   color: #151515;
@@ -1626,7 +1626,7 @@ section {
 }
 
 .btn-success:hover {
-  background: #13b83c;
+  background: #99c661;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1856,8 +1856,10 @@ section {
 
 
 .loader {
-  border: 5px solid #f3f3f3; /* Light grey */
-  border-top: 5px solid #0f2147; /* Blue */
+  border: 5px solid #f3f3f3;
+  /* Light grey */
+  border-top: 5px solid #0f2147;
+  /* Blue */
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -1865,8 +1867,13 @@ section {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
