@@ -829,6 +829,7 @@ section {
 
 .features .icon-box {
   padding-left: 15px;
+  padding-bottom: 5px;
 }
 
 .features .icon-box h4 {
@@ -1889,5 +1890,11 @@ section {
 @media (max-width: 992px) {
   #services .icon-box img.img-fluid {
     max-width: 40%
+  }
+}
+
+@media (max-width: 992px) {
+  #header .logo img {
+    max-height: 25px;
   }
 }
