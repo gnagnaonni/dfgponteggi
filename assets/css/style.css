@@ -79,7 +79,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgba(15, 33, 71);
+  background: #292323;
 }
 
 #preloader:before {
@@ -420,7 +420,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg-coppi2.jpg") top center;
+  background: url("../img/hero_bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -724,7 +724,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ffde9e;
+  background: #912525;
   margin: 4px 10px;
 }
 
@@ -930,7 +930,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.3)), url("../img/cta-bg-coppi.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.3)), url("../img/scaffolding.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
   display: flex;
@@ -1587,8 +1587,8 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
+  /*   -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite; */
 }
 
 .contact .php-email-form input,
@@ -1615,9 +1615,10 @@ section {
 .btn-info {
   background: #990303;
   border: 0;
-  padding: 7px 25px 8px 25px;
+  padding: 10px 30px;
   white-space: nowrap;
   font-size: 14px;
+  font-weight: 600;
   display: inline-block;
   color: #fff;
   transition: 0.4s;
@@ -1625,23 +1626,23 @@ section {
 }
 
 
-
 .btn-info:hover {
   background: #b74e4e;
 }
 
 .btn-success {
-  background: #99c661;
+  background: #444444;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  color: #fff;
+  font-weight: 600;
   transition: 0.4s;
   border-radius: 4px;
 }
 
-.btn-success:hover {
-  background: #99c661;
-}
+/* .btn-success:hover {
+  background: #7fe06b;
+} */
 
 @-webkit-keyframes animate-loading {
   0% {

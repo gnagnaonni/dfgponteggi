@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -109,7 +109,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -118,7 +118,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -128,7 +128,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -212,9 +212,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -222,7 +222,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -290,3 +290,53 @@
   new PureCounter();
 
 })()
+function doSubmit() {
+
+  setBtnLoading()
+
+  let scriptUrl = "https://script.google.com/macros/s/AKfycbzKIQE4MgO8LzwcnAXpCh9SPZd2m2wTBhCE8q9cg7fSly-t312rjw38PP9y5MNv_PcGDA/exec";
+  let formData = {
+    name: document.getElementById('form_name').value,
+    email: document.getElementById('form_email').value,
+    telefono: document.getElementById('form_phone').value,
+    indirizzo: document.getElementById('form_address').value,
+    message: document.getElementById('form_message').value
+  };
+
+  fetch(scriptUrl, {
+    method: 'POST',
+    mode: 'no-cors', // no-cors, *cors, same-origin
+    cache: 'no-cache',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+    .then((result) => {
+      setBtnSuccess()
+      console.log('Success!');
+    })
+    .catch((error) => {
+      console.error('Error!', error);
+    });
+
+}
+
+function setBtnLoading() {
+  var buttonInner = document.getElementById('form_button')
+  buttonInner.innerText = '';
+  buttonInner.className = "loader";
+}
+
+function setBtnSuccess() {
+  var button = document.getElementById('form_button')
+  var buttonInner = document.getElementById('form_button')
+
+  buttonInner.innerText = 'Richiesta inviata!';
+  buttonInner.className = "";
+  button.className = "btn-success"
+}
+
+function updateFormAddress() {
+  document.getElementById('form_address').value = document.getElementById('inlineForminputAddress').value
+}
