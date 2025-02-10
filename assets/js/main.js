@@ -7,6 +7,7 @@
 (function () {
   "use strict";
 
+
   /**
    * Easy selector helper function
    */
@@ -290,6 +291,7 @@
   new PureCounter();
 
 })()
+
 function doSubmit() {
 
   setBtnLoading()
@@ -312,6 +314,7 @@ function doSubmit() {
     },
     body: JSON.stringify(formData)
   })
+
     .then((result) => {
       setBtnSuccess()
       console.log('Success!');
@@ -320,10 +323,11 @@ function doSubmit() {
       console.error('Error!', error);
     });
 
+
 }
 
 function setBtnLoading() {
-  var buttonInner = document.getElementById('form_button')
+  var buttonInner = document.getElementById('form_button_inner')
   buttonInner.innerText = '';
   buttonInner.className = "loader";
 }
@@ -331,6 +335,7 @@ function setBtnLoading() {
 function setBtnSuccess() {
   var button = document.getElementById('form_button')
   var buttonInner = document.getElementById('form_button')
+
 
   buttonInner.innerText = 'Richiesta inviata!';
   buttonInner.className = "";
