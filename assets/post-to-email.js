@@ -1,4 +1,6 @@
+
 var TO_ADDRESS = "dfgcompanysrl@gmail.com";
+
 
 function formatMailBody(obj) { // function to spit out all the keys/values from the form in HTML
   var result = "";
@@ -11,7 +13,9 @@ function formatMailBody(obj) { // function to spit out all the keys/values from 
 }
 
 function doPost(e) {
+
   //{"parameter":{},"contextPath":"","contentLength":89,"queryString":"","parameters":{},"postData":{"type":"text/plain","length":89,"contents":"{\"name\":\"Nomee\",\"email\":\"emaill\",\"phone\":\"+391234\",\"place\":\"wat\",\"message\":\"messageeee!\"}","name":"postData"}}
+
   try {
     Logger.log(e); // the Google Script version of console.log see: Class Logger
     var parsedData = JSON.parse(e.postData.contents);
@@ -37,6 +41,7 @@ function doPost(e) {
 
   }
 
+
 }
 
 /**
@@ -54,18 +59,19 @@ function recordDataToSpreadsheet(e) {
     // loop through the header columns
     for (var i = 1; i < headers.length; i++) { // start at 1 to avoid Timestamp column
       if (headers[i].length > 0) {
+
         row.push(e.parameter[headers[i]]); // add data to row
       }
     }
     // more efficient to set values as [][] array than individually
     sheet.getRange(nextRow, 1, 1, row.length).setValues([row]);
   }
+
   catch (error) {
     Logger.log(e);
   }
   finally {
     return;
   }
-
 
 }
